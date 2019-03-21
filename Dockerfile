@@ -1,6 +1,5 @@
 FROM node:alpine
 
-
 RUN mkdir /app
 WORKDIR /app
 
@@ -19,7 +18,7 @@ RUN apk add --no-cache --virtual .gyp \
         body-parser ejs express net-ping sprintf-js valid-filename node-uname ibm-cos-sdk formidable\
     && apk del .gyp
 
-# RUN npm install
+#RUN npm install
 
 EXPOSE 3000
 
